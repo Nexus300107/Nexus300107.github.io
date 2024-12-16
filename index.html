@@ -6,9 +6,10 @@
   <title>Crypto Nexus</title>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
   <style>
+    /* General Body Styling */
     body {
       background: linear-gradient(45deg, #121212, #1a1a1a, #00bcd4);
       font-family: 'Orbitron', sans-serif;
@@ -24,17 +25,18 @@
       box-sizing: border-box;
     }
 
+    /* Navbar Styling */
     nav {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 50px;
+      padding: 10px 20px;
       background: #1c1c1c;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
     }
 
     h1 {
-      font-size: 36px;
+      font-size: 28px;
       color: #00bcd4;
       font-weight: 700;
       letter-spacing: 2px;
@@ -53,54 +55,107 @@
 
     li {
       display: inline-block;
-      margin: 0 20px;
-      padding: 12px 25px;
+      margin: 0 10px;
+      padding: 10px 20px;
       font-weight: 600;
       background: #333;
       color: #f0f0f0;
       border-radius: 8px;
       transition: all 0.3s ease;
       text-transform: uppercase;
-      cursor: pointer;
-      border: 2px solid #333;
-      font-family:"poppins",sans-serif;
-      
+      font-family: "Poppins", sans-serif;
     }
 
     li:hover {
       background: #00bcd4;
       color: #121212;
       box-shadow: 0 4px 15px rgba(0, 188, 212, 0.6);
-      
     }
 
     a {
       text-decoration: none;
       color: inherit;
-      font-size: 16px;
-      fonts-family:
     }
 
-   
+    /* Welcome Section */
+    .daba1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
 
-  button{
-      display:inline-block;
+    .welcome {
+      color: #00bcd4;
+      font-size: 32px;
+      margin: 15px 0;
+    }
+
+    .para {
+      margin: 5px auto;
+      width: 90%;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    button {
       background-color: #ff5722;
       color: #fff;
       border: none;
-      padding: 9px 22px;
+      padding: 10px 20px;
       border-radius: 5px;
-      font-size: 13px;
+      font-size: 14px;
       cursor: pointer;
       transition: background-color 0.3s;
-      margin-left:45%;
-      margin-top:10px;
+      margin: 10px 0;
     }
 
-  
+    /* Key Features Section */
+    .daba2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 0;
+    }
 
+    .key {
+      color: #00bcd4;
+      font-size: 28px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .items {
+      width: 90%;
+      max-width: 350px;
+      margin: 10px auto;
+      height: auto;
+      background-color: grey;
+      border-radius: 10px;
+      color: black;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+
+    .items h4 {
+      text-align: center;
+      color: white;
+      margin-top: 10px;
+      font-size: 20px;
+    }
+
+    .para2 {
+      text-align: center;
+      margin: 10px auto;
+      color: #f0f0f0;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    /* Footer */
     footer {
-      margin-bottom:0px;
       width: 100%;
       background: #121212;
       color: #f0f0f0;
@@ -108,7 +163,6 @@
       padding: 20px 0;
       font-size: 14px;
       border-top: 3px solid #00bcd4;
-      
     }
 
     footer span {
@@ -116,21 +170,13 @@
       font-weight: bold;
     }
 
-    p {
-      font-family: sans-serif;
-    }
-
     /* Responsive Design */
     @media (max-width: 768px) {
-      /* For tablet and smaller screens */
+      /* Navbar */
       nav {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         padding: 15px;
-      }
-
-      h1 {
-        font-size: 28px;
       }
 
       ul {
@@ -145,58 +191,27 @@
         width: 100%;
         padding: 12px;
       }
- 
+
+      /* Welcome Section */
+      .welcome {
+        font-size: 28px;
+      }
+
+      .para {
+        font-size: 12px;
+        width: 95%;
+      }
+
+      /* Key Features */
+      .items {
+        width: 95%;
+        padding: 10px;
+      }
+
+      .para2 {
+        font-size: 12px;
+      }
     }
-    .daba1{
-       display:flex;
-       border:2px solid whit;
-       height:43vh;
-      
-       flex-direction:column;
-    }
-    .welcome{
-       color: #00bcd4;     
-       font-size:40px;
-       margin:18px auto;
-        
-    }
-    .para{
-       margin:1px auto;   
-       width:90vw;
-    }
-    .daba2{
-         display:flex;
-         height:33vh;
-         justify-content:space-around;
-         align-items:center;
-       }
-       .key{
-         color: #00bcd4;     
-         font-size:30px;
-         text-align:center;
-         margin-top:18px;
-              
-       }
-       .items{
-         width:350px;
-         height:170px;        
-         background-color:grey;
-         border-radius:10px;
-         color:black;
-            }
-        h4{
-         text-align:center;
-         color:white;
-         margin-top:10px;
-         font-size:20px;
-        }
-        .para2{
-             
-         height:100px;
-         width:290px;
-         text-align:center;
-         margin:10px auto;
-        }
   </style>
 </head>
 
@@ -210,50 +225,34 @@
       <li><a href="#">LAYER</a></li>
     </ul>
   </nav>
-<div class="daba1">
 
-     <h2 class="welcome">
-         Welcome to Crypto Nexus
-     </h2>
-             <p class="para">
-   
-            What is cryptocurrency? A cryptocurrency is a digital currency, which is an alternative form of payment created using encryption algorithms. The use of encryption technologies means that cryptocurrencies function both as a currency and as a virtual accounting system.What is cryptocurrency? A cryptocurrency is a digital currency, which is an alternative form of payment created using encryption algorithms. The use of encryption technologies means that cryptocurrencies function both as a currency and as a virtual accounting system.What is cryptocurrency? A cryptocurrency is a digital currency, which is an alternative form of payment created using encryption algorithms. The use of encryption technologies means that cryptocurrencies function both as a currency and as a virtual accounting system.
+  <div class="daba1">
+    <h2 class="welcome">Welcome to Crypto Nexus</h2>
+    <p class="para">
+      What is cryptocurrency? A cryptocurrency is a digital currency, which is an alternative form of payment created using encryption algorithms. The use of encryption technologies means that cryptocurrencies function both as a currency and as a virtual accounting system.
+    </p>
+    <button>Get Started</button>
+  </div>
 
-             <p/>
-
-
-       <button>
-           Get Started
-     </button>
-
-</div>
- 
-                    <h2 class="key">
-                              Key Features
-                      </h2>
-<div class="daba2">
-
-      <div class="items">
-            <h4>Security</h4>
-            <p class="para2">Crypto security, therefore, involves protecting these digital assets through various measures and practices, ensuring the safety of the user's funds. </p>
-      </div>
-   
-   
-      <div class="items">
-               <h4>Fast Transaction</h4>
-                           <p class="para2">Solana (SOL)Known for its incredibly high transaction speeds, Solana can handle thousands of trapositioning it as one of the fastest blockchains available for processing transactions. </p>
-      </div>
-      
-      <div class="items">
-                 <h4>Global Network</h4>
-                             <p class="para2">Blockchain is a type of shared database that differs from a typical database in the way it stores information; blockchains store data in blocks linked together via cryptography. </p>
-      </div>  
-       
-</div>
+  <h2 class="key">Key Features</h2>
+  <div class="daba2">
+    <div class="items">
+      <h4>Security</h4>
+      <p class="para2">Crypto security involves protecting digital assets through various measures, ensuring the safety of users' funds.</p>
+    </div>
+    <div class="items">
+      <h4>Fast Transaction</h4>
+      <p class="para2">Solana is known for its high transaction speeds, positioning it as one of the fastest blockchains available.</p>
+    </div>
+    <div class="items">
+      <h4>Global Network</h4>
+      <p class="para2">Blockchain is a type of shared database that stores data in blocks linked together via cryptography.</p>
+    </div>
+  </div>
 
   <footer>
     © 2024 <span>Crypto Nexus</span>. All rights reserved.
   </footer>
-  
 </body>
+
 </html>
